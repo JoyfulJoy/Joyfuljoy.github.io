@@ -63,6 +63,7 @@ h1 {
 h2 {
     font-size: 2rem;
     margin: 1.5rem 0 1rem 0;
+    text-align: center;
 }
 
 h3 {
@@ -190,7 +191,7 @@ footer {
     margin-top: -100px;
 }
 
-.food-list {
+.item-list {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -242,12 +243,28 @@ td:nth-child(even) {
     padding: 1rem 3rem;
 }
 
-.privacy h2 {
-    text-align: center;
-}
-
 .privacy p {
     padding: 1rem;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 6px 0;
+}
+
+.icon {
+    font-size: 1.3rem;
+    margin-right: 1rem;
+}
+
+.icon i {
+    padding-right: 6px;
+}
+
+#roster, #staff-contact {
+    padding: 2rem 1rem;
 }
 
 @media screen and (max-width: 640px) {
@@ -269,7 +286,7 @@ td:nth-child(even) {
     }
 
     nav a {
-        font-size: 1em;
+        font-size: 1rem;
         float: none;
         padding: 8px;
     }
