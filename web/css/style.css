@@ -31,6 +31,8 @@ canvas,
 svg {
     display: block;
     max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 input,
@@ -91,24 +93,25 @@ header {
     color: whitesmoke;
 }
 
-nav {
+/*commented out since it's replaced by W3.CSS*/
+/* nav {
     overflow: hidden;
     background-color: black;
-}
+} */
 
-nav a {
+/* nav a {
     float: left;
     display: block;
     text-align: center;
     padding: 16px;
     text-decoration: none;
     font-size: 1.3rem;
-}
+} */
 
-nav a:hover {
+/* nav a:hover {
     background-color: gainsboro;
     color: black;
-}
+} */
 
 footer {
     text-align: center;
@@ -134,13 +137,6 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 12px;
-}
-
-.center-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .content {
@@ -182,48 +178,8 @@ footer {
     padding-left: 12px;
 }
 
-.food-section:before {
-    content: "";
-    display: block;
-    position: relative;
-    width: 0;
-    height: 100px;
-    margin-top: -100px;
-}
-
-.item-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 4rem;
-}
-
-.food-section .item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 500px;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
 .table-container {
     align-items: flex-start;
-}
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-table:last-of-type {
-    margin-left: 4rem;
-}
-
-th,
-td {
-    text-align: left;
-    padding: 16px 24px;
 }
 
 h3 {
@@ -285,11 +241,12 @@ td:nth-child(even) {
         text-align: center;
     }
 
-    nav a {
+    /*commented out since it's replaced by W3.CSS*/
+    /* nav a {
         font-size: 1rem;
         float: none;
         padding: 8px;
-    }
+    } */
 
     .grid {
         grid-template-columns: 1fr;
@@ -306,23 +263,6 @@ td:nth-child(even) {
 
     .menu a {
         min-width: auto;
-    }
-
-    .food-section:before {
-        content: "";
-        display: block;
-        position: relative;
-        width: 0;
-        height: 20px;
-        margin-top: -20px;
-    }
-
-    table:last-of-type {
-        margin-left: 0;
-    }
-
-    .column {
-        width: 100%;
     }
 
     footer {

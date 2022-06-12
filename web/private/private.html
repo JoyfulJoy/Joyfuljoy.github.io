@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Haukai Restaurant</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <!-- Here is our main header that is used across all the pages of our website -->
+    <header>Haukai Restaurant</header>
+
+    <!--'aria-label' is redundant here since <nav> element is used. Because loss of points in AS2, I've added 'aria-label'-->
+    <nav class="w3-bar w3-black" aria-label="navigation bar">
+      <a
+        href="../home.html"
+        class="w3-bar-item w3-button w3-mobile w3-padding-16 w3-large"
+        aria-label="navigation button"
+        >Home</a
+      >
+      <a
+        href="private.html#roster"
+        class="w3-bar-item w3-button w3-mobile w3-padding-16 w3-large"
+        aria-label="navigation button"
+        >Roster</a
+      >
+      <a
+        href="private.html#staff-contact"
+        class="w3-bar-item w3-button w3-mobile w3-padding-16 w3-large"
+        aria-label="navigation button"
+        >Staff Contacts</a
+      >
+    </nav>
+
+    <!-- Here is our page's main content -->
+    <main>
+      <div id="roster">
+        <h2>Roster</h2>
+        <iframe
+          src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Pacific%2FAuckland&title=Staff%20Roster&showTz=0&showCalendars=0&showTabs=0&showDate=1&showNav=1&mode=MONTH&src=MDN2b2Rra2JmcDZodm4wcTl1dHQ0dW1odGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%238E24AA"
+          style="border: solid 1px #777"
+          width="100%"
+          height="600"
+          frameborder="0"
+          scrolling="no"
+          alt="staff roster in google calendar"
+        ></iframe>
+      </div>
+
+      <div id="staff-contact" aria-label="staff contact details">
+        <div class="w3-container">
+          <h2>Staff Contacts</h2>
+        </div>
+
+        <table class="w3-table w3-margin">
+          <tr>
+            <th>Name</th>
+            <th>Phone</th>
+          </tr>
+          <tr>
+            <td>Owner Alexander Lui</td>
+            <td>021-123123</td>
+          </tr>
+          <tr>
+            <td>Owner Huia Lui</td>
+            <td>021-234234</td>
+          </tr>
+          <tr>
+            <td>Staff Cindy Fraser</td>
+            <td>022-435213</td>
+          </tr>
+          <tr>
+            <td>Staff Justin Robinson</td>
+            <td>027-232143</td>
+          </tr>
+        </table>
+      </div>
+    </main>
+
+    <!-- And here is our main footer that is used across all the pages of our website -->
+    <footer>
+      <p>
+        &copy 2022 Haukai Restaurant |
+        <a href="../privacy.html" aria-label="link to privacy statement"
+          >Privacy Statement</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
